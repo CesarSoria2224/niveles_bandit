@@ -1,0 +1,9 @@
+en este nivel se debe hacer algo peculiar que es minimizar la teminal para que al iniciar sesión con el bandit26 no nos vote directamente
+una vez minimizado debemos presionar la tecla v que es nos permite entrar al modo visual con el editor vim
+una ves dentro se debe presionar:
+
+:r /etc/bandit_pass/bandit26: esto se lo pone para poner obtener la contrasenia del siguiente nivel
+
+luego
+:set shell=/bin/bash
+:shell con esto podre entrar al usuario bandit26

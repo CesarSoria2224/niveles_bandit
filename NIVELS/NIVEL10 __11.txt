@@ -1,0 +1,5 @@
+base64 data.txt -d:
+
+base64: este comando permite codificar o decodificar datos en formato 64 dependiendo que paremetro le pasamos
+
+-d: este parámetro indica que lo que queremos es decodificar un archivo de base64 a su base binaria

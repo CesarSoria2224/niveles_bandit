@@ -1,0 +1,14 @@
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-z'
+
+tr: este comando permite reemplazar letras por otras letras que nosotros le pasemos como parametron
+tr "set1" "set2"
+set1: es el conjunto de caracteres que queremos reemplazar
+set2: es el conjunto de caracteres por los cuales reemplazaremos los caracteres de set1
+
+en este caso::
+
+tr 'A-Za-z' 'N-ZA-Mn-z'
+'A-Za-z': indica todos los caracteres desde la A a la Z sea  mayuscula o minuscula 
+N-ZA-Mn-z: este parametron indica que las letras que van desde N a Z se traduciran a las letras que van desde A a la M 
+por ejemplo en este caso la N se convertira en A y asi 
+eso aplica para las mayusculas y minusculas es por que el parametron se encuntra escrito en mayuscula y minisculas

@@ -1,0 +1,14 @@
+en este nivel usaremos el comando
+nmap localhost -p31000-32000 esto para escanear los puestos en ese rango 
+luego
+
+ncat --ssl localhost 31790: con este comando nos estamos conectando al puerto 31790 y luego de realizar la conexión se le pasara la contrasenia actual del nivel
+
+luego nos generara una llave privada RSA copiaremos ese contenido
+
+y crearemos un directori y un archivo temporal, en ese archivo temporal pegaremos lo copiado
+
+luego iniciaremos sesión usando esa llave
+
+ssh -i "archivo" bandit17@bandit.labs.overthewire.org -p 2220
+con esto ya nos conectaríamos al nivel 17

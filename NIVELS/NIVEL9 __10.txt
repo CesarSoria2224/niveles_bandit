@@ -1,0 +1,5 @@
+strings data.txt | grep "==="
+
+strings: este comando extrae texto imprimible que se encuetra en el archivo
+
+grep: busca en todo el archivo lo que le pasemos como parámetro y muestra la linea completa

@@ -1,0 +1,62 @@
+7z x data.hex
+7z: este es un ejecutable para el programa 7-zip que es una herramienta de compression y descompresion que soporta varios formatos de archivos
+x: este parametro indica que se desea extraer el contenido del archivo especificado. 
+
+SCRIPT PARA EL NIVEL 12
+
+#!/bin/bash
+
+Archivo_com='data.gzip'
+
+while :; do
+    7z l $Archivo_com > /dev/null 2>&1
+
+    if [ "$(echo $?)" = "0" ]; then
+        Archivo_des=$(7z l $Archivo_com | grep "Name" -A 2 | tail -n 1 | awk 'NF{print $NF}')
+        7z x $Archivo_com > /dev/null 2>&1
+
+        # echo "Archivo Comprimido:" $Archivo_com
+        rm $Archivo_com
+        Archivo_com=$Archivo_des
+    else
+        cat $Archivo_des
+        exit 1
+    fi
+done
+
+************************
+#!/bin/bash: ESTA LINEA INDICA QUE ESTE SCRIP SE EJECUTARA CON EL INTERPRETE DE COMANDOS DE BASH
+
+Archivo_com='data.gzip': AQUI SE ESTA DEFINIENDO UNA VARIABLE LLAMADA Archivo_com y este almacenara una variable data.gzip
+
+while :; do : este esta iniciando un bucle infinito 
+
+7z l $Archivo_com > /dev/null 2>&1 : este comando esta listando todo el contenido del archivo data.gzip 
+luego esta redigiendo la salida al vacio, es decir que no mostrara errores
+
+ if [ "$(echo $?)" = "0" ]; then : aqui esta verificando e estado de salida del ultimo comando, este verifica si el anterior comando se ejecuto correctamente
+
+
+Archivo_des=$(7z l $Archivo_com | grep "Name" -A 2 | tail -n 1 | awk 'NF{print $NF}') : este comando extrae el nombre del ultimo archivo descomprimido
+
+7z l $Archivo_com: Listar nuevamente el contenido del archivo
+
+grep "Name" -A 2: Busca la línea que contiene "Name" y también obtiene las dos líneas siguientes.
+
+tail -n 1: Obtiene solo la última línea de la salida anterior, que contiene el nombre del archivo
+
+awk 'NF{print $NF}': Imprime el último campo de esa línea, que será el nombre del siguiente archivo comprimido
+
+7z x $Archivo_com > /dev/null 2>&1: Este comando descomprime el archivo data.gzip en el directorio actual, sin mostrar salida
+
+rm $Archivo_com: Elimina el archivo comprimido actual, ya que su contenido ha sido extraído
+
+Archivo_com=$Archivo_des: Actualiza la variable Archivo_com con el nombre del siguiente archivo extraído para continuar el proceso
+
+else: Si 7z l $Archivo_com no tuvo éxito (es decir, no hay más archivos comprimidos para procesar):
+cat $Archivo_des: Muestra el contenido del último archivo descomprimido
+
+exit 1: Sale del script con un código de estado 1, indicando que hubo un problema (en este caso, que no hay más archivos que procesar)
+
+
+

@@ -1,0 +1,6 @@
+en este nivel se de hacer de igual manera un cat al archivo que tiene espacios en el nombre
+
+el cat se lo debe hacer cuando se haya seleccionado entre comillas el archivo
+
+ejemplo:
+cat 'spaces in this filename' 

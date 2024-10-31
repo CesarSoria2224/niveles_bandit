@@ -1,0 +1,2 @@
+la contrasenia para el nivel 0 es bandit0
+AL ENTRAR SOLO SE DEBE HACER UN CAT AL ARCHIVO README

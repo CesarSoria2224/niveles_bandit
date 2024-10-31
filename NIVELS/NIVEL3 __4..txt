@@ -1,0 +1,6 @@
+en este nivel se debe ingresar al directorio inhere
+y hacer un ls -la
+ls: lista el contenido
+-la: este comando muestra todos los archivos de un direcctorios hasta los que esta ocultos
+
+al ejecutar este comando mostrara un archivo llamado aculto para ti

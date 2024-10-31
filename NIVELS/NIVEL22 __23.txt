@@ -1,0 +1,10 @@
+este nivel es algo parecido al anterior
+cat /etc/cron.d/cronjob_bandit23
+
+cat /usr/bin/cronjob_bandit23.sh abrimos el script
+
+a la variable myname=bandit24= le asinamos este valor a esta variable
+
+echo I am user $myname | md5sum | cut -d ' ' -f 1 = con este obtendremos un archivo. obtenemos un hash
+
+cat /tmp/ee4ee1703b083edac9f8183e4ae70293: aquí estamos abriendo el archivo generado 

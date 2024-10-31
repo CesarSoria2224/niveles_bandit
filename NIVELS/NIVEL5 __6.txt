@@ -1,0 +1,3 @@
+cd inhere :  con este comando entramos a este directorio
+
+find ./ -sisy 1033c | xargs cat : este comando busca un archivo con un tamanio de 1033 bytes y con el comando xargs abre el archivo que se encontro

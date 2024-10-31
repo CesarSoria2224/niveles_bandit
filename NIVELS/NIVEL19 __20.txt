@@ -1,0 +1,5 @@
+en este nivel tenemos un ejecutable bandit20-do que al ejecutar este nos permitirá ejecutar comandos como si fuecemos el bandit20
+
+por lo tanto se uso: 
+
+./bandit20-do cat /etc/bandit_pass/bandit20

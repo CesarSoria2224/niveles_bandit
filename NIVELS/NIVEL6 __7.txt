@@ -1,0 +1,8 @@
+find / -group bandit6 -user bandit6 -size 33c 2>/dev/null | xargs cat 
+
+find: este comando permite buscar algún archivo en algún determina directorio
+/ : con este indicamos que buscaremos el archivo en el directorio raíz
+
+-group: con este parámetro indicamos el grupo
+-user: con este paremetro indicamos el usuario 
+2>/dev/null: con este comando se envia todos los mensajes de error al vacio como por ejemplo los mensajes de denegación de permisos

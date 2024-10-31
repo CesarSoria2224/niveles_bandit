@@ -1,0 +1,5 @@
+EN ESTE NIVEL SOLO SE DEBE HACER UN CAT AL ARCHIVO -
+POR EJEMPLO
+cat ./-
+./: indica que el proceso se ejecuatara en el direcctorio actual
+-: indica el nombre del archivo

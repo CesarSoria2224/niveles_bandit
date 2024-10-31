@@ -1,0 +1,17 @@
+en este nivel hacemos l mismo del anterior
+
+cat /etc/cron.d/cronjob_bandit24
+
+cat /usr/bin/cronjob_bandit24.sh= abrimos el acrip
+ 
+cd /var/spool/bandit24/foo/ = entramos al directorio
+
+mktemp -d= creamos un directorio temporal
+
+cd /tmp/tmp.1ItJ9FO5N5 = entramos al directorio temporal
+
+nano script.sh = creamos el script que se nos pide
+
+touch contra = creamos un archivo vacio, donde se almacenara la contrasenia
+
+chmod 777 -R /tmp/tmp.1ItJ9FO5N5 = le damos todos los permisos al directorio temporal

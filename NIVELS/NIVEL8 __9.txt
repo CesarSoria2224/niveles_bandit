@@ -1,0 +1,6 @@
+sort data.txt | uniq -u
+sort: este comando ordena el contenido de un archivo en orden alfabetico o numerico
+
+uniq: este comando elimina las líneas duplicadas en un archivo
+
+-u: este parámetro hace que solo se muestren las líneas de un archivo que no se repiten en todo el archivo

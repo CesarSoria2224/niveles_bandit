@@ -1,0 +1,7 @@
+en este nivel debemos ver un script que hay
+
+cat /etc/cron.d/cronjob_bandit22: con esto abrimos el contenido del archivo cronjob_bandit22 con este accederemos a ver el directorio donde tenemos el scrip original
+
+cat /usr/bin/cronjob_bandit22.sh: con esto veremos el contenido del scrip
+
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv:: abrimos este archivo y ahi se encuentra la contrasenia

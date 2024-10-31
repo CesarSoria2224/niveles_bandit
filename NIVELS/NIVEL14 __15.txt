@@ -1,0 +1,8 @@
+en este nivel nos pide enviar la contrasenia actual al puerto 30000 del localhost
+
+nc localhost 30000
+nc: netcat: es un programa que permite abrir conexiones de red para enviar y recibir datos
+
+localhost: este indica que me estoy conectando al sercivio e mi maquina local
+
+30000: indica al puerto al cual estamos concetados

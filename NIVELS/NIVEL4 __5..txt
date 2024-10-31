@@ -1,0 +1,5 @@
+cd /inhere entramos al directorio inhere
+
+file ./* este comando identifica los tipos de archivos en el directorio actual
+
+cat al archivo que es lejible

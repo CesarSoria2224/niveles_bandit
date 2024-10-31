@@ -1,0 +1,5 @@
+grep 'millionth' data.txt | awk '{print $NF}'
+
+grep ' ' : con este comando se busca un determinado texto o una palabra en un archivo
+
+awk '{print $NF}':  con este comando imprime el ultimo comanpo de un archivo o la ultima palabra despues de un espacio

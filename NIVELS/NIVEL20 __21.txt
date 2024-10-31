@@ -1,0 +1,12 @@
+en este nivel necesitaremos 2 teminales una donde se escuche el trafico de un puerto y otro donde haya conexión
+
+en la primera teminal
+
+./"archivo" 1234 (que este es el puerto que esta escuchando)
+
+en la segunda terminal
+
+nc -vpl 1234: aquí estamos usando ncat para poder hacer la conexión al puerto y los otros parámetros como 
+v= se lo pone para tener mas información sobre el puerto
+l= con este se inicia el escucha del puerto 
+p= con esto especificamos el numero del puerto

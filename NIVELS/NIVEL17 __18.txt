@@ -1,0 +1,7 @@
+en este nivel al contrasenia se la obtiene usando:
+diff passwords.old passwords.new 
+con el diff hacemos una comparación entre los dos archivos linea por linea
+
+sshpass -p "$(cat ./bandit/bandit18)" ssh -t -l bandit18 bandit.labs.overthewire.org -p 2220 /bin/sh
+se usa esta forma de inicio de sesión por motivos de que hay un error que hace que al iniciar sesión inmediatamente nos voto
+
